@@ -53,7 +53,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 
 
 void binary_tree_delete(binary_tree_t *tree);
-/*
+
 int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
@@ -77,7 +77,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 bst_t *bst_insert(bst_t **tree, int value);
-*/
+
 /* Helper functions - Moved here because of Betty */
 /* void create_queue(binary_tree_t *tree, q_node **head, q_node **tail,
 				  q_node *(*func)(binary_tree_t *, q_node **, q_node **));

@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic
-VAR = 3
+VAR = 4
 
-SRCS = binary_tree_print.c  0-binary_tree_node.c 2-binary_tree_insert_right.c 3-binary_tree_delete.c $(VAR)-main.c
+SRCS = binary_tree_print.c  0-binary_tree_node.c 2-binary_tree_insert_right.c 4-binary_tree_is_leaf.c $(VAR)-main.c
 OBJS = $(SRCS:.c=.o)
 TARGET = $(VAR)-node
 
