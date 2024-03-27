@@ -6,7 +6,7 @@ SRCS = binary_tree_print.c  0-binary_tree_node.c 1-binary_tree_insert_left.c 2-b
 OBJS = $(SRCS:.c=.o)
 TARGET = $(VAR)-node
 
-all: $(TARGET)
+all: betty $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
@@ -14,6 +14,9 @@ $(TARGET): $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+betty:
+	betty $(SRCS)
 
 clean:
 	$(RM) $(OBJS) $(TARGET)
